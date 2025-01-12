@@ -1,0 +1,470 @@
+@font-face {
+    font-family: "Assassin's Font";
+    src: url(./Text\ Format/Assassin$.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.meniu{
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.meniu li{
+    font-size: 1.7vw;
+    display: inline-block;
+    
+}
+
+.meniu li p{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    padding: 1vw 2.5vw;
+    border-radius: 20px;
+    background-color: rgb(0,0,0,0);
+    color: rgb(185, 42, 42);
+}
+.meniu li p:hover{
+    color: black;
+    background-color: rgba(63, 41, 41, 0.74) ;
+}
+.meniu li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    padding: 1vw 2.5vw;
+    border-radius: 20px;
+    color: rgb(185, 42, 42);
+    background-color: rgb(0,0,0,0);
+}
+
+.meniu li a:hover{
+    color: black;
+    background-color: rgba(63, 41, 41, 0.74) ;
+}
+
+.News img {
+    height: 4vw;
+    width: 3.5vw;
+}
+
+header{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 1% 6%;
+    background-color: rgb(17, 33, 54);
+    z-index: 999;
+}
+
+
+Body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url("./Poze/Background.jpg");
+}
+
+
+h1 {
+    color: rgb(185, 42, 42);
+    font-family: "Assassin's Font";
+    z-index: 100;
+    animation: MainMenu;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+h2 {
+    color: rgb(185, 42, 42);
+    font-family: "Assassin's Font";
+    font-size: 3.5vw;
+    display: block;
+}
+
+.News{
+    font-size: 1.3vw;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.25cm 0.3cm;
+    border-radius: 20px;
+    color: rgb(185, 42, 42);
+    margin: 0 6vw 0 0;
+    transition: all 0.3s ease 0s;
+}
+
+.News:hover{
+    color: black;
+    background-color: rgba(63, 41, 41, 0.74);
+}
+
+
+.Container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    animation: MainMenu;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes MainMenu {
+    0%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#Poza1{
+    z-index: 4;
+}
+#Poza2{
+    z-index: 3;
+}
+#Poza3{
+    z-index: 2;
+}
+#Poza4{
+    z-index: 1;
+}
+
+.Container img:nth-of-type(1){
+    animation-delay: 0s;
+}
+.Container img:nth-of-type(2){
+    animation-delay: 5s;
+}
+.Container img:nth-of-type(3){
+    animation-delay: 10s;
+}
+.Container img:nth-of-type(4){
+    animation-delay: 15s;
+}
+
+
+.Container{
+    position: relative;
+    width: 100%;
+    height: 60vw;
+    margin: 0% 0% 10% 0%;;
+    z-index: 1;
+}
+
+
+.UTOP{
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-size: 8vw;
+}
+
+
+.TOP{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    white-space: nowrap;
+    transform: translate(-50%,-50%);
+    font-size: 9vw;
+}
+
+
+.Grid{
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(14,auto);
+    column-gap: 0px;
+    row-gap: 13vw;
+}
+
+
+.Grid-Row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-height: 33vw;
+}
+
+
+.Grid-Row:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.imagine_joc{
+    width: 50%;
+    height: 100%;
+}
+
+.imagine_joc img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.Descriere{
+    width: 50%;
+    display: inline-block;
+    color: white;
+    background-color: rgba(23, 48, 82, 0.774);
+    align-items: center;    
+    justify-content: center;
+    padding: 9% 9%;
+}
+
+.Descriere ul{
+    align-items: center;
+    justify-content: center;
+}
+
+.Descriere ul li{
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+
+.Form {
+    text-align: center; 
+    padding: 20px;
+}
+
+form label{
+    font-size: 1.5vw;
+    color: white;
+}
+
+form input[type="email"]{
+    display: flex;
+    justify-content:center;
+    margin: 10px auto; /* Center each element horizontally */
+    padding: 5px;
+    width: 20%;
+    font-size: 1vw;
+}
+
+form button {
+    margin: 10px;
+    padding: 5px;
+    width: 10%;
+    background-color: white;
+    color: black;
+    font-size: 1vw;
+    border: gray;
+    cursor: pointer;
+}
+
+form span{
+    font-size: 1.4vw;
+    color: white;
+}
+
+#authSection{
+    display: flex;
+    justify-content: center;
+}
+
+#loginForm button{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#logoutSection{
+    display: flex;
+    justify-content: center;
+}
+
+#About{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+
+.Footer_Symbol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Footer_Symbol img{
+    width: 40%;
+    height: 50%;
+}
+
+#Footer_Text{
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#About_Text{
+    width: 80%;
+    height: 100%;
+}
+
+#RightsReserved{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#RightsReserved p{
+    text-align: center;
+}
+
+#Counter {
+    margin: 20px;
+}
+
+#Counter p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.Dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 90vw;
+    background-color: #222;
+    padding: 20px 0;
+    z-index: 1001;
+}
+
+.meniu li:nth-child(n+2):nth-child(-n+2):hover .Dropdown{
+    display: block
+}
+
+.Meniu_Row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    margin-bottom: 10px;
+}
+
+.Meniu_Row_Tel{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+.Dropdown img {
+    width: 100%;
+    height: auto;
+    max-width: 11vw;
+    max-height:11vw;
+    margin: 0 auto;
+}
+
+.Dropdown img:hover {
+    filter: brightness(0.8);
+}
+
+@media (max-width: 750px) {
+    .Footer_Symbol{
+        display: none;
+        position: absolute;
+    }
+
+    .imagine_joc{
+        width: 100%;
+        height: auto;
+    }
+
+    .Descriere{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .Descriere p{
+        font-size: 5vw;
+    }
+    .Grid{
+        margin-bottom: 20vw;
+    }
+    .Grid-Row{
+        display: block;
+        height: 100vw;
+        margin-bottom: 150vw;
+    }
+    
+    .imagine_joc img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .Dropdown img{
+        width: 100%;
+        height: 100%;
+        max-width: 14vw;
+        max-height: 14vw;
+        margin: 0 3vw;
+    }
+
+    .Meniu_Row_Tel{
+        display: block;
+        
+    }
+    .Meniu_Row{
+        display: block;
+        text-align: center;
+    
+    }
+    .Dropdown{
+        width: 50vw;
+    }
+    #Footer_Text{
+        color: white;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .meniu li a{
+        font-size: 4vw;
+    }
+    .meniu li p{
+        font-size: 4vw;
+    }
+    .Contact{
+        font-size: 3vw;
+        transform: translate(50%);
+    }
+}
