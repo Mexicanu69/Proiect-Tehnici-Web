@@ -1,10 +1,8 @@
+localStorage.setItem("symbols", "0");
 window.onload = function (){
     const a = document.querySelector("#RightsReserved p");
     a.style.color = "red";
     var Counter = 0;
-    
-    localStorage.setItem("Counter", "0");
-    
     let footerCounter = document.querySelector("#Counter p");
     
     updateFooterCounter();
