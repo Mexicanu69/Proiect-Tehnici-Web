@@ -5,6 +5,8 @@ window.onload = function (){
     var Counter = 0;
     let footerCounter = document.querySelector("#Counter p");
     
+
+
     updateFooterCounter();
 
     function updateFooterCounter () {
@@ -184,8 +186,25 @@ window.onload = function (){
 
                 });
             
-            
-            
+                var c = document.getElementById("Canvas");
+                var ctx = c.getContext("2d");
+                ctx.lineWidth = 5;
+                ctx.strokeStyle = "red";
+                ctx.moveTo(100, 0);
+                ctx.lineTo(100, 200);
+                ctx.lineTo(50,110);
+                ctx.lineTo(100, 200);
+                ctx.lineTo(150, 110);
+                ctx.moveTo(10,0);
+                ctx.lineTo(10, 160);
+                ctx.moveTo(10,200);
+                ctx.lineTo(10,190);
+                ctx.moveTo(190,0);
+                ctx.lineTo(190, 160);
+                ctx.moveTo(190,200);
+                ctx.lineTo(190,190);
+                ctx.stroke();
+                
 
 
     
