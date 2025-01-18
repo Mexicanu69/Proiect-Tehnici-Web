@@ -261,7 +261,7 @@
         <div class = "Form">
             <form id="registrationForm">
                     <label for="email">Enter Email to Recieve News:</label>
-                    <input type="email" id="email" name="email" placeholder="Ex: andrei-rodion.persicanu@s.unibuc.ro" required>
+                    <input type="email" id="email" name="email" pattern = "/^[^\s@]+@[^\s@]+\.[^\s@]+$/" placeholder="Ex: andrei-rodion.persicanu@s.unibuc.ro" required>
                     <span class="error" id="emailError"></span>
 
                     <div class="checkbox-container">
@@ -293,6 +293,11 @@
             <button id="logoutButton">Deconectare</button>
         </div>
     
+        <div id="Canvas">
+            <canvas id="myCanvas" width="200" height="200">
+            </canvas>
+
+        </div>
 
         <div id="About">
             <div Class="Footer_Symbol">

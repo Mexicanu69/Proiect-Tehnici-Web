@@ -185,7 +185,27 @@ window.onload = function (){
                 });
             
             
-            
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.strokeStyle = "red";
+                ctx.lineWidth = 5;
+                ctx.moveTo(10, 50);
+                ctx.lineTo(10, 185);
+                ctx.moveTo(10, 195);
+                ctx.lineTo(10, 200);
+
+                ctx.moveTo(190, 50);
+                ctx.lineTo(190, 185);
+                ctx.moveTo(190, 195);
+                ctx.lineTo(190, 200);
+
+                ctx.moveTo(100, 25);
+                ctx.lineTo(100, 200);
+                ctx.lineTo(75,150);
+                ctx.lineTo(100,200);
+                ctx.lineTo(125,150);
+
+                ctx.stroke(); 
 
 
     
